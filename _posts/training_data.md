@@ -1,8 +1,7 @@
 ---
 
 layout: minimal
-title: Digital Analytics Cookbook
-category: list-a-category
+title: Training Data
 
 ---
 

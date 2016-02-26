@@ -32,27 +32,14 @@
       <header>
         <h1 class="header"><a href="/">Digital Analytics Cookbook</a></h1>
 
-        <h3>Google Analytics</h3>
-
-        <h3>Adobe Analytics</h3>
-
-        <h3>Tag Management</h3>
-
-        <h3>API/Programmatic</h3>
-            <ul>
-	            <li><a href="python_identify_duplicate_data.html">Python: Identify Duplicate Data</a></li>
-            </ul>
-        <h3>Testing & Optimization</h3>
-            <ul>
-                <li><a href="target_class_workflow.html">Adobe Target: Classic Workflow</a></li>
-            </ul>
-        <h3>Data Visualization</h3>
-
-        <h3>Search Engine Optimization (SEO)</h3>
-
-        <h3>Email</h3>
-
-        <h3>Customer Relationship Management (CRM)</h3>
+		{% for category in site.categories}
+        <h3>{{category}}</h3>
+			{% for post in categories.[page.category] %}
+				<ul>
+					<li><a href="{{post.permalink}}">{{post.title}}</a></li>
+				</ul>
+			{% endfor %}
+		{% endfor %}
 
       </header>
 
