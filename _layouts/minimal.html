@@ -31,7 +31,10 @@
     <div class="wrapper">
       <header>
         <h1 class="header"><a href="/">Digital Analytics Cookbook</a></h1>
-
+		<li>
+			<a href="how_to_submit.html" style="font-size:18px;">How To Submit An Article</a>
+		</li>
+		{{site.categories}}
 		{% for category in site.categories %}
         <h3>{{category | first }}</h3>
 			{% for posts in category %}
